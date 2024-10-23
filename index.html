@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Scrollable Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        /* Full-height layout */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .container-fluid {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            flex: 0 0 auto; /* Fixed height for header */
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            flex: 1 1 auto; /* Expandable area for content */
+            overflow-y: auto; /* Scrollable */
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .footer {
+            flex: 0 0 auto; /* Fixed height for footer */
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <!-- Header Div -->
+        <div class="header">
+            <h1>Machine Learning-Based Intrusion Detection for
+                Swarm of Unmanned Aerial Vehicles</h1>
+        </div>
+
+        <!-- Scrollable Content Div -->
+        <div class="content">
+            <div class="content">
+                <h2>Abstract</h2>
+                <p>
+                    Swarms of unmanned aerial vehicles (UAVs) are widely adopted in civilian and military applications. However, this cyber-physical system is threatened by cyber-attacks. Recently, machine learning-based intrusion detection systems have been successfully adopted to detect cyber-attacks. This study addresses three key questions related to cyber and physical feature fusion for improved detection performance in UAV swarms. We developed a preliminary testbed with two UAVs and launched various cyber-attacks to collect relevant data. Subsequently, we developed and evaluated intrusion detection systems using shallow and deep machine learning models. The extensive studies provide insights and pave the way toward effective intrusion detection systems in UAV swarms.
+                </p>
+                
+                <p><strong>Index Terms</strong>— UAV swarms, cyber-attacks, machine learning, intrusion detection systems.</p>
+    
+                <h2>I. INTRODUCTION</h2>
+                <p>
+                    Swarms of unmanned aerial vehicles (UAVs) have gained tremendous attention due to their diverse applications in civilian and military domains. Their capabilities range from environmental monitoring and disaster management to surveillance and combat operations. However, their widespread adoption poses significant challenges related to operational needs and safety/security concerns. Adversaries can target UAV swarms, causing malfunctions and crashes in urban areas, leading to potential loss of life and property.
+                </p>
+                <p>
+                    Various efforts, such as NASA’s unmanned traffic management and the U.S. Department of Defense’s strategies, aim to secure UAV operations. These strategies emphasize the need for robust security measures to prevent unauthorized access and ensure the safe operation of UAVs. Several intrusion detection systems (IDSs) have been developed to address these challenges, focusing on detecting cyber-attacks like denial-of-service (DoS), false data injection (FDI), replay, hijacking, and spoofing. Despite these efforts, existing IDSs often fail to treat UAVs as cyber-physical systems, leading to limited performance.
+                </p>
+                <p>
+                    This study investigates whether fusing cyber and physical features from attacked and unattacked UAVs in the swarm can enhance detection performance. By integrating both types of data, we aim to develop more robust and accurate IDSs capable of identifying and mitigating threats in real-time.
+                </p>
+    
+                <h2>II. LITERATURE REVIEW</h2>
+                <p>
+                    The literature on attack detection in UAVs can be categorized into model-based and data-driven IDSs. Model-based IDSs, such as those by Zhao et al. and Xiao et al., rely on accurate models to set alarm thresholds, which may not be feasible when system parameters are unknown or dynamically changing. These models often require extensive knowledge of the system’s normal behavior, which can be challenging to obtain and maintain.
+                </p>
+                <p>
+                    Data-driven IDSs, on the other hand, utilize machine learning techniques to overcome these limitations. Examples include works by Lee et al. and Abbaspour et al., which use support vector regression and adaptive neural networks, respectively. These approaches can adapt to new types of attacks and changing system conditions by learning from data. However, these studies often focus on single UAVs and do not consider cyber-physical data fusion or real communication with UAVs to obtain datasets.
+                </p>
+                <p>
+                    Furthermore, studies such as those by Zhang et al. and Park et al. have highlighted the importance of real-time detection and the need for low-latency solutions in dynamic environments. Zhang et al. proposed a deep learning-based IDS for detecting GPS spoofing attacks, while Park et al. focused on collaborative IDSs for UAV networks. Despite these advancements, the challenge of effectively integrating cyber-physical data from multiple UAVs in a swarm remains underexplored.
+                </p>
+                <p>
+                    Our study addresses these gaps by examining the resilience of machine learning-based attack detection in UAV swarms using both cyber and physical features. By leveraging data from multiple UAVs in the swarm, we aim to develop IDSs that are more robust to individual UAV failures and capable of detecting coordinated attacks.
+                </p>
+            </div>
+
+        <!-- Footer Div -->
+        <div class="footer">
+            <p>&copy; Sreeparvathy A 21062</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
